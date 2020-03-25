@@ -41,16 +41,16 @@ class ProductTest < Minitest::Test
     assert_equal 9.0, product2.total_price
   end
 
-def test_is_hoarded
+  def test_is_hoarded
 
-  product = Product.new(:paper, 'toilet paper', 3.70, '10')
-  assert_equal false, product.is_hoarded?
-end
+    product = Product.new(:paper, 'toilet paper', 3.70, '10')
+    assert_equal false, product.is_hoarded?
+  end
 
-def test_hoard
-  product = Product.new(:paper, 'toilet paper', 3.70, '10')
-require 'pry'; binding.pry
-  assert_equal 0, product.hoard
-  assert_equal true, product.is_hoarded?
-end
+  def test_hoard
+    product = Product.new(:paper, 'toilet paper', 3.70, '10')
+
+    assert_equal 0, product.hoard
+    assert_equal true, product.is_hoarded?
+  end
 end
