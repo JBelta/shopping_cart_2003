@@ -6,4 +6,9 @@ class ShoppingCart
     @products = []
   end
 
+  def name
+    @name
+  end
+  
+
 end
