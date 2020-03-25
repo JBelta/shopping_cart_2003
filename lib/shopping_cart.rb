@@ -14,5 +14,9 @@ class ShoppingCart
     @capacity[0..1].to_i
   end
 
+  def products
+    @products
+  end
+  
 
 end
