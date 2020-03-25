@@ -28,10 +28,9 @@ class ShoppingCartTest < Minitest::Test
     product1 = Product.new(:paper, 'toilet paper', 3.70, '10')
     product2 = Product.new(:meat, 'chicken', 4.50, '2')
     cart = ShoppingCart.new("King Soopers", "30items")
-require 'pry'; binding.pry
     cart.add_product(product1)
     cart.add_product(product2)
-    attr_equal [product1, product2], cart.products
+    assert_equal [product1, product2], cart.products
   end
 
 
