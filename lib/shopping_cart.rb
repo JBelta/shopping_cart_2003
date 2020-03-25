@@ -1,8 +1,9 @@
-class ShopingCart
+class ShoppingCart
 
-def initialize(name, capacity)
-  @name = name
-  @capacity = capacity
-  @products = []
+  def initialize(name, capacity)
+    @name = name
+    @capacity = capacity
+    @products = []
+  end
 
 end
