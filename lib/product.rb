@@ -30,12 +30,14 @@ end
 def is_hoarded?
   if @quantity.to_i > 0
     false
-  else
+  elsif @quantity.to_i == 0
     true
   end
+end
 
 def hoard
-  @quantity.to_i = 0
+  @quantity =
+  (@quantity.to_i - @quantity.to_i).to_s
 end
 
 end

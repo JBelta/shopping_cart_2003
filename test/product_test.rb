@@ -47,4 +47,10 @@ def test_is_hoarded
   assert_equal false, product.is_hoarded?
 end
 
+def test_hoard
+  product = Product.new(:paper, 'toilet paper', 3.70, '10')
+require 'pry'; binding.pry
+  assert_equal 0, product.hoard
+  assert_equal true, product.is_hoarded?
+end
 end
