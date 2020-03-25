@@ -1,3 +1,4 @@
+
 class ShoppingCart
 
   def initialize(name, capacity)
@@ -17,6 +18,10 @@ class ShoppingCart
   def products
     @products
   end
-  
+
+  def add_product(item)
+    @products << item
+  end
+
 
 end
