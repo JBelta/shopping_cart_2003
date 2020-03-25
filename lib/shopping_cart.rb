@@ -23,5 +23,10 @@ class ShoppingCart
     @products << item
   end
 
+#on to iter 3
+
+def is_full?
+  if @products.quantity > @capacity.capacity
+    false
 
 end
