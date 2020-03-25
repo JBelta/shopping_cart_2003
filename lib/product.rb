@@ -20,7 +20,7 @@ class Product
   end
 
 def quantity
-  @quantity
+  @quantity.to_i
 end
 
   def total_price
