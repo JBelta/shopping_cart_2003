@@ -27,5 +27,11 @@ end
     @unit_price * @quantity.to_i
   end
 
+def is_hoarded?
+  if @quantity.to_i > 0
+    false
+  else
+    true
+  end
 
 end
