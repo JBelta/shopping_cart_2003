@@ -34,4 +34,8 @@ def is_hoarded?
     true
   end
 
+def hoard
+  @quantity.to_i = 0
+end
+
 end
