@@ -9,6 +9,10 @@ class ShoppingCart
   def name
     @name
   end
-  
+
+  def capacity
+    @capacity[0..1].to_i
+  end
+
 
 end
